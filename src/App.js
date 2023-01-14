@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 
+import {ShowCovidDataTable} from './component/CovidDataTable';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className='container'>
+  <h2 className='text-center text-danger'>Summary of Coronavirus COVID19 Updated(2023)</h2>
+  <h5 className='text-center text-info'>API Resource https://rapidapi.com/api-sports/api/covid-193/</h5>
+  <div className="container mt-5">
+  <ShowCovidDataTable></ShowCovidDataTable>
+  </div>
+  </div>
   );
 }
 
